@@ -1,6 +1,9 @@
 package com.epam.conditions;
 
+import java.util.logging.Logger;
+
 public class SeasonDeterminer {
+    private static final Logger logger = Logger.getLogger(SeasonDeterminer.class.getName());
 
     public void tellTheSeason(int monthNumber) {
         String season;
@@ -15,6 +18,7 @@ public class SeasonDeterminer {
         } else {
             season = "Wrong month number";
         }
+        logger.info(season);
         System.out.println(season);
     }
 
