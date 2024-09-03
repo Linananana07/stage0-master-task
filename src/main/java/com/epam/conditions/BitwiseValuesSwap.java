@@ -11,7 +11,5 @@ public class BitwiseValuesSwap {
         first = first ^ second;
         logger.info(String.valueOf(first));
         logger.info(String.valueOf(second));
-        System.out.println(first);
-        System.out.println(second);
     }
 }
