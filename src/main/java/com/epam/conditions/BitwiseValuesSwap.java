@@ -9,7 +9,11 @@ public class BitwiseValuesSwap {
         first = first ^ second;
         second = first ^ second;
         first = first ^ second;
-        logger.info(String.valueOf(first));
-        logger.info(String.valueOf(second));
+        int finalFirst = first;
+        logger.info(() -> String.format("First: %d", finalFirst));
+        int finalSecond = second;
+        logger.info(() -> String.format("Second: %d", finalSecond));
+        System.out.println(first);
+        System.out.println(second);
     }
 }
